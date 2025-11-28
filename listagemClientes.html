@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Listarde Usuários</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <style>
+h2{
+   color: #e08e79;
+}
+body{
+  background-color: #c5e0dc;
+}
+
+.btn-primary {
+  background-color: #774f38;
+  border: none;
+
+}
+
+.btn-primary:hover {
+  background-color: #f1d4af;
+
+}
+
+.table-dark{
+  background-color: #f1d4af;
+}
+    </style>
+
+</head>
+<body>
+    <nav class= "navbar navbar-expand-lg navbar-dark" style="background-color: #774f38;">  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="principal.html">Wonner</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link dropdown-item" aria-current="page" href="principal.html">Principal</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cadastros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="usuarioCadastro.html">Usuário</a></li>
+            <li><a class="dropdown-item" href="ClienteCadastro.html">Cliente</a></li>
+             <li><a class="dropdown-item" href="produtoCadastro.html">Produto</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="Logout">
+        <a href="index.html" class="btn btn-outline-light">Sair</a>
+      </form>
+    </div>
+  </div>
+</nav> 
+
+
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Clientes Cadastrados</h2>
+      <a href="ClienteCadastro.html" class="btn btn-primary">+ Novo Cliente </a>
+    </div> <br>
+
+    <div class="card" >
+   <div class="card-body">
+   <h6 class="card-title">Nome</h6>
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Buscar...">
+  <button class="btn btn-primary" type="button">
+    <i class="bi bi-search"></i>
+  </button>
+</div>
+
+
+      
+   </div>
+   </div> <br>
+
+
+    
+ <table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Ativo</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Silva</td>
+      <td>silviavia@gmail.com</td>
+      <td>Sim</td>
+      <td><button class="btn btn-sm btn-warning">
+        <i class="bi bi-pencil-square"></i></button>
+        <button class="btn btn-sm btn-danger">
+        <i class="bi bi-trash"></i>
+       </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Cruz Santos</td>
+      <td>crucru@gmail.com</td>
+      <td>Sim</td>
+      <td><button class="btn btn-sm btn-warning">
+        <i class="bi bi-pencil-square"></i></button>
+        <button class="btn btn-sm btn-danger">
+        <i class="bi bi-trash"></i>
+       </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Maria Sato</td>
+      <td>satoria@gmail.com</td>
+      <td>Sim</td>
+      <td><button class="btn btn-sm btn-warning">
+        <i class="bi bi-pencil-square"></i></button>
+        <button class="btn btn-sm btn-danger">
+        <i class="bi bi-trash"></i>
+       </button>
+      </td> 
+    </tr>
+  </tbody>
+</table>
+  </div>
+</body>
+</html>
